@@ -13,15 +13,13 @@ class Box {
     this.score;
     World.add(world, this.body);
   }
-  display(){
-    
-    
-    score()
-    {
-      if (this.Visiblity < 0 && this.Visiblity > -105){
-        score++;
-      }
+  score()
+  {
+    if (this.Visiblity < 0 && this.Visiblity > -105){
+      score++;
     }
+  }
+  display(){
 
     if(this.body.speed < 3){
 

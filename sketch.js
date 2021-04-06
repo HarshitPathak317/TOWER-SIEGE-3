@@ -11,7 +11,7 @@ var box4,box5,box6;
 var box7,box8,box9;
 var polygon,slingshout;
 var polygonObj;
-//var score;
+var score;
 function preload() {
   polygonimg = loadImage('img/polygon.gif');
 }
@@ -95,7 +95,7 @@ async function getBackgroundImg(){
   var datetime = responseJSON.datetime;
   var hour = datetime.slice(11,13);
   
-  if(hour>=06 && hour<=06){
+  if(hour>=06 && hour<=19){
     background(56,44,44);  
   }
   else{
